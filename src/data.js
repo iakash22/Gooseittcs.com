@@ -18,21 +18,6 @@ export const sliderCardsData = [
         buttonhead: "Review >",
         redirect: "/",
         img: TechConsultingImg,
-    }, {
-        head: "Technology Training",
-        subHead: "Interactive Instructor-Led Training",
-        description: "Help You And Your Team Stay Up-To-Date With The Latest Technology Advancements.",
-        buttonhead: "Training Options >",
-        redirect: "/",
-        img: TechTrainingImg,
-    },
-    {
-        head: "Your Implementation Partner",
-        subHead: "Bridging The Gap",
-        description: "Full Lifecyle Implementation On Major Cloud Platforms I.E. SAP IBP, Oracle Cloud.",
-        buttonhead: "Explore >",
-        redirect: "/",
-        img: SoftwareImplImg,
     },
     {
         head: "Software Development",
@@ -41,7 +26,22 @@ export const sliderCardsData = [
         buttonhead: "Review Solutions >",
         redirect: "/",
         img: SoftwareDevImg,
-    }
+    },
+    {
+        head: "Your Implementation Partner",
+        subHead: "Bridging The Gap",
+        description: "Full Lifecyle Implementation On Major Cloud Platforms I.E. SAP IBP, Oracle Cloud.",
+        buttonhead: "Explore >",
+        redirect: "/",
+        img: SoftwareImplImg,
+    }, {
+        head: "Technology Training",
+        subHead: "Interactive Instructor-Led Training",
+        description: "Help You And Your Team Stay Up-To-Date With The Latest Technology Advancements.",
+        buttonhead: "Training Options >",
+        redirect: "/",
+        img: TechTrainingImg,
+    },
 ];
 
 export const SliderSucessImgData = [
