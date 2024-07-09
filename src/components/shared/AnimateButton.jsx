@@ -2,9 +2,9 @@ import React from 'react'
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 
-const AnimateButton = ({to="#",title, hidden}) => {
+const AnimateButton = ({to="#",title, hidden, style}) => {
     return (
-        <button className={`xl:ml-[45px] lg:block ${hidden}`}>
+        <button className={`xl:ml-[45px] lg:block ${hidden} ${style}`}>
             <Link to={to} className="btn-one">
                 {title}
                 <MdKeyboardDoubleArrowRight />
