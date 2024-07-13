@@ -208,3 +208,87 @@ body {
     background-size: cover;
     width: 100%;
 }
+
+.contact-hero-bg{
+    background-image: url(https://www.gooseittc.com/wp-content/uploads/2024/06/Image-1.jpg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: initial;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-hero-bg::after{
+    content: '';
+    position: absolute;
+    background-image: url(https://www.gooseittc.com/wp-content/themes/conbix/assets/img/shape/page-banner-bg.png);
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: -2;
+}
+
+.flip-card:hover{
+    background-color: #131313;
+}
+
+.flip-card::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(	https://www.gooseittc.com/wp-content/themes/conbix/assets/img/shape/footer.png);
+    background-size: cover;
+    background-position: right;
+    z-index: -1;
+    opacity: 0.6;
+    transition: 0.4s;
+}
+
+.spin-box::after{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 1px dashed #1a73e9;
+    border-radius: 50%;
+    display: block;
+    top: -10px;
+    left: -10px;
+    animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(359deg);
+    }
+}
+
+
+.flip-card:hover .flip-animate{
+    transform: rotateY(360deg);
+}
+
+
+/* Servicess  */
+
+.software-hero-bg{
+    background-image: url(https://www.gooseittc.com/wp-content/uploads/2023/06/custom_web_development.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: initial;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
