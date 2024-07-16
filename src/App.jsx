@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './App.css'
 import { Route, Routes, useNavigate } from 'react-router-dom'
 import Home from './pages/Home'
@@ -8,6 +8,9 @@ import SoftwareDevelopment from './pages/SoftwareDevelopment'
 import TechnologyConsulting from './pages/TechnologyConsulting'
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  })
   const navigate = useNavigate();
   return (
     <div className='overflow-hidden'>
@@ -16,7 +19,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/software-development' element={<SoftwareDevelopment />} />
-        <Route path='/technology-consulting' element={<TechnologyConsulting />} />
+        {/* <Route path='/technology-consulting' element={<TechnologyConsulting />} /> */}
         <Route path='*' element={<div className='h-screen w-screen flex-col flex justify-center items-center'>
           <h2 className='md:text-5xl text-3xl caption-top text-center font-semibold mb-5'>Page is under maintenance</h2>
           <button className='py-3 px-10 bg-blue text-2xl text-white rounded-md' onClick={() => navigate(-1)}>Back</button>

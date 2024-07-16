@@ -29,7 +29,7 @@ const Contact = () => {
 
             <div className='relative bg-bg-color md:py-[100px] py-[70px] w-full'>
                 <div className='md:max-w-[760px] mx-auto xl:max-w-[1160px] 2xl:max-w-[1300px] w-full px-4'>
-                    <div className='flex md:flex-row flex-col gap-x-8 mx-auto justify-center items-center gap-y-10'>
+                    <div className='flex md:flex-row flex-col gap-x-8 mx-auto justify-center gap-y-10'>
                         <FlipCard
                             title={"Office Location"}
                             desc={"300 Nicole Ave, Mountain House, CA-95391"}
