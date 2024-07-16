@@ -49,7 +49,7 @@ body {
     transform: rotate(23deg);
 }
 
-.menu{
+.menu {
     width: 100%;
     position: absolute;
     top: -100%;
@@ -59,20 +59,92 @@ body {
     opacity: 0;
     z-index: 100;
     transition-property: transform;
-
 }
 
-.menu.active{
+.menu.active {
     top: 100%;
     opacity: 1;
-    transform: translateY(2px);    
+    transform: translateY(2px);
 }
 
-.menu ul{
+.menu ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     list-style: none;
+}
+
+.service-link::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 23px;
+    width: 2px;
+    height: 8px;
+    background: #131313;
+    transition: all 0.3s ease;
+}
+
+.service-menu:hover .service-link::before {
+    transform: translateY(-50%) rotate(90deg);
+    opacity: 0;
+}
+
+@media (max-width: 1199px) {
+    .service-link::before {
+        right: 16px;
+    }
+
+    .service-link::after {
+        right: 16px;
+    }
+}
+
+
+.service-link::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 8px;
+    height: 2px;
+    background: #131313;
+}
+
+.service-menu:hover .service-link::after {
+    background-color: #1a73e9;
+}
+
+.sub-menu {
+    position: absolute;
+    background: #FFFFFF;
+    min-width: 240px;
+    transition: all 0.3s ease-out 0s;
+    top: 100%;
+    opacity: 0;
+    box-shadow: 0px 25px 70px rgba(0, 0, 0, 0.08);
+    visibility: hidden;
+    z-index: 1000;
+    left: -15px;
+    text-align: left;
+    transform: scale(1, 0);
+    transform-origin: 0 0;
+}
+
+.service-menu:hover .sub-menu {
+    transform: scale(1, 1);
+    opacity: 1;
+    visibility: visible;
+}
+
+.sub-menu-active {
+    max-width: 0;
+    position: relative;
+    transform: scale(1, 1);
+    opacity: 1;
+    visibility: visible;
 }
 
 .btn-one {
@@ -91,7 +163,8 @@ body {
     position: relative;
 }
 
-.btn-one::before, .btn-sub::before {
+.btn-one::before,
+.btn-sub::before {
     content: "";
     position: absolute;
     height: 400px;
@@ -105,7 +178,8 @@ body {
     z-index: -1;
 }
 
-.btn-one:hover::before, .btn-sub:hover::before {
+.btn-one:hover::before,
+.btn-sub:hover::before {
     transform: translateY(-50%) translateX(-50%) scale(1);
 }
 
@@ -176,7 +250,7 @@ body {
     }
 }
 
-.subscribe-title::after{
+.subscribe-title::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -201,7 +275,7 @@ body {
     left: 0;
 } */
 
-.about-hero-bg{
+.about-hero-bg {
     background-image: url(https://www.gooseittc.com/wp-content/uploads/2023/06/107.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -209,7 +283,7 @@ body {
     width: 100%;
 }
 
-.contact-hero-bg{
+.contact-hero-bg {
     background-image: url(https://www.gooseittc.com/wp-content/uploads/2024/06/Image-1.jpg);
     background-position: top right;
     background-repeat: no-repeat;
@@ -220,7 +294,7 @@ body {
     z-index: 1;
 }
 
-.contact-hero-bg::after{
+.contact-hero-bg::after {
     content: '';
     position: absolute;
     background-image: url(https://www.gooseittc.com/wp-content/themes/conbix/assets/img/shape/page-banner-bg.png);
@@ -233,11 +307,11 @@ body {
     z-index: -2;
 }
 
-.flip-card:hover{
+.flip-card:hover {
     background-color: #131313;
 }
 
-.flip-card::after{
+.flip-card::after {
     content: "";
     position: absolute;
     left: 0;
@@ -252,7 +326,7 @@ body {
     transition: 0.4s;
 }
 
-.spin-box::after{
+.spin-box::after {
     content: '';
     position: absolute;
     width: 80px;
@@ -266,26 +340,27 @@ body {
 }
 
 @keyframes rotation {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(359deg);
     }
 }
 
 
-.flip-card:hover .flip-animate{
+.flip-card:hover .flip-animate {
     transform: rotateY(360deg);
 }
 
-.flip-card:hover .spin-box::after{
+.flip-card:hover .spin-box::after {
     animation: none;
 }
 
 /* Servicess  */
 
-.software-hero-bg{
+.software-hero-bg {
     background-image: url(https://www.gooseittc.com/wp-content/uploads/2023/06/custom_web_development.webp);
     background-position: center center;
     background-repeat: no-repeat;
@@ -296,7 +371,7 @@ body {
     z-index: 1;
 }
 
-.technology-cons-hero-bg{
+.technology-cons-hero-bg {
     background-image: url(https://www.gooseittc.com/wp-content/uploads/2023/06/tech-consulting-768x537-1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -307,7 +382,7 @@ body {
     z-index: 1;
 }
 
-.technology-cons-hero-bg::before{
+.technology-cons-hero-bg::before {
     content: '';
     position: absolute;
     background-color: #FFFFFF;

@@ -11,11 +11,11 @@ const HeroContainer = ({ title, description, ClassName }) => {
                         {title}
                     </h1>
 
-                    <p className='text-[#000000] font-medium lg:max-w-[63.956%] lg:w-[62%] md:w-[55.9%] sm:w-[70%] w-[90%] text-base leading-[30px] mb-[20px]'>{description}</p>
+                    <p className='text-[#000000] font-medium lg:max-w-[63.956%] lg:w-[62%] md:w-[55.9%] sm:w-[70%] w-[90%] text-base md:leading-[30px] leading-[25px] mb-[20px]'>{description}</p>
 
                     <Link to={"/contact"}>
                         <button className='btn-sub z-[3] inline-flex items-center bg-blue text-base font-semibold text-center px-5 md:px-10 justify-center
-                                                overflow-hidden relative text-[#FFFFFF] uppercase py-3 md:py-5 rounded-full'>
+                                                overflow-hidden relative text-[#FFFFFF] uppercase py-4 md:py-5 rounded-full mb-4'>
                             Contact us
                             <MdKeyboardDoubleArrowRight className='ml-2 text-xl' />
                         </button>

@@ -1,6 +1,6 @@
 import React from 'react'
 import Subscribe from '../components/common/Subscribe'
-import { FaRegEdit, FaDatabase } from "react-icons/fa";
+import { FaRegEdit, FaDatabase, FaArrowRight } from "react-icons/fa";
 import { FaUserGroup } from "react-icons/fa6";
 import { HiRefresh } from "react-icons/hi";
 import { BiMessageRounded } from "react-icons/bi";
@@ -68,10 +68,42 @@ const TechnologyConsulting = () => {
             </div>
 
 
-            <div className='my-[50px] bg-bg-color relative'>
+            <div className='my-[50px] bg-bg-color relative '>
                 <div className='md:max-w-[760px] mx-auto xl:max-w-[1160px] w-full px-4'>
-                    <div className='w-full'>
-
+                    <div className='grid md:grid-cols-3 grid-cols-1 gap-y-3'>
+                        <div className='md:rounded-[6px_0px_0px_6px]  rounded-[6px] p-[40px_30px] relative overflow-hidden bg-[#FFFFFF] hover:bg-[#1a73e9] group transition-all duration-[0.4s] ease-out'>
+                            <span className=''>
+                                <div className='absolute right-[-50px] top-[-50px] w-[137px] h-[137px] bg-blue opacity-[0.1] rounded-full group-hover:bg-[#FFFFFF] z-[1] transition-all duration-[0.4s] ease-out'>
+                                </div>
+                                <FaArrowRight
+                                        className='text-[25px] text-blue absolute top-[25px] right-[20px] group-hover:text-[#FFFFFF] transition-all duration-[0.4s] ease-out'
+                                    />
+                            </span>
+                            <p className='max-w-[270px] text-base leading-[30px] group-hover:text-[#FFFFFF] transition-all duration-[0.4s] ease-out'>Creative Approaches To Tackle Your Most Pressing Challenges</p>
+                            <h4 className='text-2xl font-bold leading-[34px] mb-1 group-hover:text-[#FFFFFF] transition-all duration-[0.4s] ease-out'>Strategic Planning</h4>
+                        </div>
+                        <div className='rounded-[6px] md:rounded-none p-[40px_30px] relative overflow-hidden bg-[#FFFFFF] hover:bg-[#1a73e9] group transition-all duration-[0.4s] ease-out'>
+                            <span className=''>
+                                <div className='absolute right-[-50px] top-[-50px] w-[137px] h-[137px] bg-blue opacity-[0.1] rounded-full group-hover:bg-[#FFFFFF] z-[1] transition-all duration-[0.4s] ease-out'>
+                                </div>
+                                <FaArrowRight
+                                        className='text-[25px] text-blue absolute top-[25px] right-[20px] group-hover:text-[#FFFFFF] transition-all duration-[0.4s] ease-out'
+                                    />
+                            </span>
+                            <h4 className='text-2xl font-bold leading-[34px] mb-1 group-hover:text-[#FFFFFF] transition-all duration-[0.4s] ease-out'>Strategic Planning</h4>
+                            <p className='max-w-[270px] text-base leading-[30px] group-hover:text-[#FFFFFF] transition-all duration-[0.4s] ease-out'>Creative Approaches To Tackle Your Most Pressing Challenges</p>
+                        </div>
+                        <div className='md:rounded-[0px_6px_6px_0px] rounded-[6px] p-[40px_30px] relative overflow-hidden bg-[#FFFFFF] hover:bg-[#1a73e9] group transition-all duration-[0.4s] ease-out'>
+                            <span className=''>
+                                <div className='absolute right-[-50px] top-[-50px] w-[137px] h-[137px] bg-blue opacity-[0.1] rounded-full group-hover:bg-[#FFFFFF] z-[1] transition-all duration-[0.4s] ease-out'>
+                                </div>
+                                <FaArrowRight
+                                        className='text-[25px] text-blue absolute top-[25px] right-[20px] group-hover:text-[#FFFFFF] transition-all duration-[0.4s] ease-out'
+                                    />
+                            </span>
+                            <h4 className='text-2xl font-bold leading-[34px] mb-1 group-hover:text-[#FFFFFF] transition-all duration-[0.4s] ease-out'>Strategic Planning</h4>
+                            <p className='max-w-[270px] text-base leading-[30px] group-hover:text-[#FFFFFF] transition-all duration-[0.4s] ease-out'>Creative Approaches To Tackle Your Most Pressing Challenges</p>
+                        </div>
                     </div>
                 </div>
             </div>
