@@ -14,6 +14,7 @@ const TechnologyConsulting = () => {
                 title={"Technology Consulting"}
                 description={"At Goose ITTC, We Believe That Technology Should Be Used To Drive Business Growth And Success. Our Technology Consulting Services Are Designed To Help Businesses And Organizations Stay Ahead Of The Curve And Make The Most Of The Latest Technology Advancements. Our Team Of Experts Will Work Closely With You To Understand Your Needs And Provide Customized Technology Solutions That Will Help You Achieve Your Goals."}
                 ClassName={"technology-cons-hero-bg"}
+                colors={{textColor : "text-[#000000]"}}
             />
 
             <div className='my-[50px] bg-bg-color relative'>

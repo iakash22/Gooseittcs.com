@@ -9,7 +9,6 @@ export default {
         blue: "#1a73e9",
         "text-black": "#131313",
         "bg-color" : "#F4F4F4"
-        
       }
     },
   },
