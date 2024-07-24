@@ -192,11 +192,12 @@ body {
 }
 
 .home-globe-bg {
-    background-image: url(https://www.gooseittc.com/wp-content/uploads/2023/06/gooseiitc-facebook-cover-1247x601-1.jpg);
+    /* background-image: url(https://www.gooseittc.com/wp-content/uploads/2023/06/gooseiitc-facebook-cover-1247x601-1.jpg); */
+    background-image: url('./assets/globe3.jpeg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.4;
+    opacity: 0.6;
     /* transition: background 0.3s, border-radius 0.3s, opacity 0.3s; */
     background-attachment: fixed;
     width: 100%;

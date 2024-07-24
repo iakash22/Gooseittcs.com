@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { MdKeyboardDoubleArrowRight, MdOutlineMenu, MdClose } from "react-icons/md";
 import AnimateButton from '../shared/AnimateButton';
 import Headroom from 'react-headroom';
+import Logo from '../../assets/logo2.jpeg'
 
 const Header = () => {
     const [open, setOpen] = useState(false)
@@ -15,10 +16,11 @@ const Header = () => {
                 <div className="sm:px-[30px] bg-[#FFFFFF] relative py-2 md:py-0">
                     <div className="max-w-[1520px] mx-auto px-3">
                         <div className="flex justify-between items-center gap-x-5">
-                            <div className="w-[275px]">
+                            <div className="md:w-[250px] w-[200px]">
                                 <Link to="/">
                                     <img
-                                        src="https://www.gooseittc.com/wp-content/uploads/2024/06/Gooseittc-logo-.png"
+                                        // src="https://www.gooseittc.com/wp-content/uploads/2024/06/Gooseittc-logo-.png"
+                                        src={Logo}
                                         alt="logo"
                                         className="w-full"
                                     />
@@ -46,6 +48,10 @@ const Header = () => {
                                     <HeaderLink
                                         title={"Contact Us"}
                                         to={"/contact"}
+                                    />
+                                    <HeaderLink
+                                        title={"Blogs"}
+                                        to={'#blog'}
                                     />
                                 </ul>
                             </div>
@@ -116,6 +122,10 @@ const Header = () => {
                             <MenuLink
                                 title={"Contact Us"}
                                 to={"/contact"}
+                            />
+                            <MenuLink
+                                title={"Blogs"}
+                                to={"#blog"}
                             />
                         </ul>
                     </div>
