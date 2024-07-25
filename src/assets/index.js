@@ -8,6 +8,8 @@ import Banner2Img from '../assets/banner-8.jpg';
 import Banner3Img from '../assets/banner-9.jpg';
 import touch1Img from '../assets/iInTouch.png';
 import touch2Img from '../assets/touch.png';
+import Logo from '../assets/logo.png';
+import Globe from '../assets/globe.png';
 
 
 export {
@@ -21,4 +23,6 @@ export {
     Banner3Img,
     touch1Img,
     touch2Img,
+    Logo,
+    Globe,
 };

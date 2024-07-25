@@ -4,6 +4,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { HiOutlinePhone } from "react-icons/hi2";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa6";
+import {Logo} from '../../assets';
 
 const Footer = () => {
     return (
@@ -19,7 +20,8 @@ const Footer = () => {
                     <div className='md:w-[30%]'>
                         <Link to={'/'}>
                             <img
-                                src="https://www.gooseittc.com/wp-content/uploads/2024/06/Gooseittc-logo-.png"
+                                // src="https://www.gooseittc.com/wp-content/uploads/2024/06/Gooseittc-logo-.png"
+                                src={Logo}
                                 alt="logo"
                                 className='w-[287px]'
                             />

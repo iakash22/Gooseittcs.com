@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { MdKeyboardDoubleArrowRight, MdOutlineMenu, MdClose } from "react-icons/md";
 import AnimateButton from '../shared/AnimateButton';
 import Headroom from 'react-headroom';
-import Logo from '../../assets/logo2.jpeg'
+import {Logo} from '../../assets'
 
 const Header = () => {
     const [open, setOpen] = useState(false)
