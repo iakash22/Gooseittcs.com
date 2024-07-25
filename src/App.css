@@ -196,7 +196,7 @@ body {
     background-image: url('./assets/globe.png');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     opacity: 0.6;
     /* transition: background 0.3s, border-radius 0.3s, opacity 0.3s; */
     background-attachment: fixed;
