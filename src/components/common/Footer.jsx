@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { CiLocationOn } from "react-icons/ci";
 import { HiOutlinePhone } from "react-icons/hi2";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaTwitter,FaLinkedinIn } from "react-icons/fa6";
 import {Logo} from '../../assets';
 
 const Footer = () => {
@@ -96,9 +96,14 @@ const Footer = () => {
                         </div>
 
                         <div className='flex gap-x-6 mt-8 '>
-                            <Link to={"https://www.facebook.com/"} target='_blank'>
+                            <Link to={"https://www.facebook.com/gooseittc"} target='_blank'>
                                 <div className='w-[50px] h-[50px]  bg-[#fff] text-center flex items-center justify-center rounded-full hover:bg-blue cursor-pointer transition-all duration-500 group'>
                                     <FaFacebookF className='text-[20px] group-hover:text-[#fff] transition-all duration-300' />
+                                </div>
+                            </Link>
+                            <Link to={"https://www.linkedin.com/company/goose-ittc"} target='_blank'>
+                                <div className='w-[50px] h-[50px]  bg-[#fff] text-center flex items-center justify-center rounded-full hover:bg-blue cursor-pointer transition-all duration-500 group'>
+                                    <FaLinkedinIn className='text-[20px] group-hover:text-[#fff] transition-all duration-300' />
                                 </div>
                             </Link>
                             <Link to={'https://www.instagram.com/gooseittc?igsh=YTQwZjQ0NmI0OA=='} target='_blank'>

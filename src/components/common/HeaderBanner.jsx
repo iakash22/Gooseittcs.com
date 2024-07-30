@@ -1,6 +1,6 @@
 import React from 'react'
 import { IoMail } from "react-icons/io5";
-import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
 const HeaderBanner = () => {
@@ -17,8 +17,11 @@ const HeaderBanner = () => {
 
                     <div className='w-[1.5px] bg-[#eee4] h-8'></div>
                     <div className='flex gap-x-3 text-[#fff]'>
-                        <Link to={"https://www.facebook.com/"} target='_blank'>
+                        <Link to={"https://www.facebook.com/gooseittc"} target='_blank'>
                             <FaFacebookF className='text-[20px] text-[#fff] hover:text-blue transition duration-150 ease-linear cursor-pointer' />
+                        </Link>
+                        <Link to={"https://www.linkedin.com/company/goose-ittc"} target='_blank'>
+                            <FaLinkedinIn className='text-[20px] text-[#fff] hover:text-blue transition duration-150 ease-linear cursor-pointer' />
                         </Link>
                         <Link to={"https://www.instagram.com/gooseittc?igsh=YTQwZjQ0NmI0OA=="} target='_blank'>
                             <FaInstagram className='text-[20px] text-[#fff] hover:text-blue transition duration-150 ease-linear cursor-pointer' />
