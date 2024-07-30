@@ -9,7 +9,7 @@ const SoftwareDevelopment = () => {
         <div className='relative bg-bg-color'>
             <HeroContainer
                 title={"Software Development"}
-                description={"Website Design & Development, Corporate Website, Personal Website, Dynamic Website, E-Commerce Website, Re-Design & Maintenance"}
+                description={"We specialize in delivering comprehensive software solutions tailored to meet your business needs. Our expertise spans across various domains, ensuring that you have the right tools to drive efficiency and growth."}
                 ClassName={"software-hero-bg"}
             />
 
