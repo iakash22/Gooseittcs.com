@@ -2,6 +2,7 @@ import React from 'react'
 import WrapperLayout from '../components/layout/WrapperLayout'
 import { Link } from 'react-router-dom';
 import BlogPost from '../components/shared/BlogPost';
+import Subscribe from '../components/common/Subscribe';
 
 
 
@@ -120,6 +121,8 @@ const Blog = () => {
                     imageUrl={"https://media.licdn.com/dms/image/D5612AQEMfvJqp_vbUw/article-cover_image-shrink_720_1280/0/1721779583852?e=1727913600&v=beta&t=V5KyIItNov0SYSkdlGJP9eqC2Ye4Zbiy-Pd9OiQYQTM"}
                 />
             </div>
+
+            <Subscribe />
         </div>
     )
 }
