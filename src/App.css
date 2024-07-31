@@ -285,6 +285,27 @@ body {
     width: 100%;
 }
 
+.blog-bg{
+    background: #000e;
+    width: 100%;
+    opacity: 0.9;
+    height: 100%;
+}
+
+.blog-bg::after{
+    content: "";
+    background-image: url('./assets/globe.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
 .contact-hero-bg {
     background-image: url(https://www.gooseittc.com/wp-content/uploads/2024/06/Image-1.jpg);
     background-position: top right;

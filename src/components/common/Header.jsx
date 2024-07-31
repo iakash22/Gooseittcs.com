@@ -51,7 +51,7 @@ const Header = () => {
                                     />
                                     <HeaderLink
                                         title={"Blogs"}
-                                        to={'#blog'}
+                                        to={'/blog'}
                                     />
                                 </ul>
                             </div>
@@ -125,7 +125,7 @@ const Header = () => {
                             />
                             <MenuLink
                                 title={"Blogs"}
-                                to={"#blog"}
+                                to={"/blog"}
                             />
                         </ul>
                     </div>
