@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import WrapperLayout from '../components/layout/WrapperLayout'
 import { Link } from 'react-router-dom';
 import BlogPost from '../components/shared/BlogPost';
 import Subscribe from '../components/common/Subscribe';
+import PostModal from '../components/shared/PostModal';
+import Button from '@mui/material/Button';
 
 
-
-const Blog = () => {
-    const blogContent1 = [
+const blogPost1 = {
+    blogContent: [
         {
             subtitle: 'Confusing Application Processes',
             paragraph: 'Navigating through complex and lengthy application forms can be frustrating. Many job seekers find themselves lost in a maze of requirements and steps. Simplifying your resume and keeping a checklist of required documents can help streamline the process.'
@@ -53,8 +54,15 @@ const Blog = () => {
             paragraph: "The job search journey is filled with challenges, but with the right strategies and mindset, job seekers can navigate these obstacles and find the perfect fit. Remember, persistence and resilience are key. Keep refining your approach, and don’t be afraid to seek support from mentors, career coaches, or professional networks."
         },
         // Add more content sections as needed
-    ];
-    const blogContent2 = [
+    ],
+    title: "The Struggles of Job Seekers: Finding the Perfect Fit",
+    author: "Team GITTC",
+    date: "July 26, 2024",
+    imageUrl: "https://media.licdn.com/dms/image/D5612AQHlkpwuZRMgNA/article-cover_image-shrink_720_1280/0/1721983249032?e=1727913600&v=beta&t=BQe3A__yj3iF5L-CIolxR_CfmMX3SRSnQ5V85ddNRGM",
+}
+
+const blogPost2 = {
+    blogContent: [
         {
             subtitle: "How AI Is Changing the Dance Floor",
             paragraph: "Picture this: a grand ballroom where history meets innovation. The waltz of technology has always had its disruptors—the kind that sweep in, uninvited, and change everything. In the early 20th century, it was the automobile, scoffed at by horse-and-buggy loyalists. Today, it’s AI’s turn to take the lead. AI is altering the fabric of industries across the globe. Let’s explore this transformation, its implications, and how forward-thinking companies are adapting.",
@@ -87,7 +95,23 @@ const Blog = () => {
             subtitle: "Our Ongoing Symphony",
             paragraph: "Embracing Change: GITTC’s Dance Card : At Goose ITTC, we’re not wallflowers, we’re not bystanders. We’re jitterbugging with AI. Our supply chain algorithms do the jitterbug, but our logistics experts? they’re the swing dancers. We’re rewriting the steps, adapting to the rhythm of progress. So grab a partner—human or algorithm—and let’s tango toward success.",
         },
-    ]
+    ],
+    title: "Navigating the AI Revolution: Where Humans and Algorithms Tango",
+    author: "Team GITTC",
+    date: "July 24, 2024",
+    imageUrl: "https://media.licdn.com/dms/image/D5612AQEMfvJqp_vbUw/article-cover_image-shrink_720_1280/0/1721779583852?e=1727913600&v=beta&t=V5KyIItNov0SYSkdlGJP9eqC2Ye4Zbiy-Pd9OiQYQTM",
+}
+
+const Blog = () => {
+    const [open, setOpen] = useState(false);
+    const [blogPostData, setBlogPostData] = useState(null);
+    const openHandler = (data) => {
+        setBlogPostData(data)
+        setOpen(true);
+        console.log(open);
+    }
+
+
     return (
         <div className='relative bg-bg-color'>
             <div className="blog-bg bg-cover overflow-hidden after:h-[620px] after:md:h-[420px] mb-10">
@@ -98,33 +122,66 @@ const Blog = () => {
                                 <Link to={"/"} className='mr-[20px] transition duration-[0.4s] cursor-pointer'>Home</Link>
                                 <span>|</span>
                             </li>
-                            <li className='list-none font-bold text-lg text-blue'>Blog</li>
+                            <li className='list-none font-bold text-lg text-blue'>Blogs</li>
                         </ul>
-                        <h1 className='text-[70px] md:leading-[80px]  text-start leading-[1.4] lg:font-bold font-semibold text-[#FFFFFF]'>Blog</h1>
+                        <h1 className='text-[70px] md:leading-[80px]  text-start leading-[1.4] lg:font-bold font-semibold text-[#FFFFFF]'>Blogs</h1>
                     </div>
                 </div>
             </div>
 
-            <div className='relative bg-bg-color py-[3rem]'>
-                <BlogPost
-                    title="The Struggles of Job Seekers: Finding the Perfect Fit"
-                    content={blogContent1}
-                    author="Team GITTC"
-                    date="July 26, 2024"
-                    imageUrl={"https://media.licdn.com/dms/image/D5612AQHlkpwuZRMgNA/article-cover_image-shrink_720_1280/0/1721983249032?e=1727913600&v=beta&t=BQe3A__yj3iF5L-CIolxR_CfmMX3SRSnQ5V85ddNRGM"}
-                />
-                <BlogPost
-                    title="Navigating the AI Revolution: Where Humans and Algorithms Tango"
-                    content={blogContent2}
-                    author="Team GITTC"
-                    date="July 24, 2024"
-                    imageUrl={"https://media.licdn.com/dms/image/D5612AQEMfvJqp_vbUw/article-cover_image-shrink_720_1280/0/1721779583852?e=1727913600&v=beta&t=V5KyIItNov0SYSkdlGJP9eqC2Ye4Zbiy-Pd9OiQYQTM"}
-                />
+            <div className="lg:max-w-[960px] md:max-w-[760px] mx-auto  xl:max-w-[1280px] w-full px-4">
+                <div className='relative bg-bg-color py-[3rem] grid md:grid-cols-2 grid-col-1 gap-8'>
+                    <BlogPostCard
+                        title="The Struggles of Job Seekers: Finding the Perfect Fit"
+                        data={blogPost1}
+                        imageUrl={"https://media.licdn.com/dms/image/D5612AQHlkpwuZRMgNA/article-cover_image-shrink_720_1280/0/1721983249032?e=1727913600&v=beta&t=BQe3A__yj3iF5L-CIolxR_CfmMX3SRSnQ5V85ddNRGM"}
+                        handler={openHandler}
+                    />
+                    <BlogPostCard
+                        title="Navigating the AI Revolution: Where Humans and Algorithms Tango"
+                        data={blogPost2}
+                        imageUrl={"https://media.licdn.com/dms/image/D5612AQEMfvJqp_vbUw/article-cover_image-shrink_720_1280/0/1721779583852?e=1727913600&v=beta&t=V5KyIItNov0SYSkdlGJP9eqC2Ye4Zbiy-Pd9OiQYQTM"}
+                        handler={openHandler}
+                    />
+                </div>
             </div>
 
             <Subscribe />
+
+            <PostModal
+                title={"The Struggles of Job Seekers: Finding the Perfect Fit"}
+                setOpen={setOpen}
+                open={open}
+                data={blogPostData}
+            />
         </div>
     )
 }
 
 export default WrapperLayout()(Blog);
+
+
+const BlogPostCard = ({ handler, data }) => {
+    const clickHandler = () => {
+        handler(data);
+    }
+    return (
+        <div className="w-full px-4 py-6 bg-white shadow-md rounded-lg">
+            <header className="mb-6">
+                <h1 className="text-3xl font-bold text-gray-900 mb-2">{data?.title}</h1>
+                <p className="text-sm text-gray-500">By {data?.author} | {data?.date}</p>
+            </header>
+
+            {data?.imageUrl && (
+                <img
+                    src={data?.imageUrl}
+                    alt="Hero"
+                    className="w-full h-72 object-cover rounded-lg mb-6"
+                />
+            )}
+            <Button onClick={clickHandler} variant="contained" sx={{padding : "10px 15px", backdropFilter : "#1a73e9"}}>
+                Read more
+            </Button>
+        </div>
+    )
+}

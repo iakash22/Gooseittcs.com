@@ -288,7 +288,7 @@ body {
 .blog-bg{
     background: #000e;
     width: 100%;
-    opacity: 0.9;
+    opacity: 0.7;
     height: 100%;
 }
 
@@ -438,4 +438,12 @@ body {
     height: 100%;
     position: relative;
     z-index: 1;
+}
+
+.postModal::-webkit-scrollbar{
+    display: none;
+    
+}
+.postModal{
+    scroll-behavior: smooth;
 }
