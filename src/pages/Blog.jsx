@@ -102,6 +102,138 @@ const blogPost2 = {
     imageUrl: "https://media.licdn.com/dms/image/D5612AQEMfvJqp_vbUw/article-cover_image-shrink_720_1280/0/1721779583852?e=1727913600&v=beta&t=V5KyIItNov0SYSkdlGJP9eqC2Ye4Zbiy-Pd9OiQYQTM",
 }
 
+const blogPost3 = {
+    title: "Talent Acquisition Trends: What's Shaping the Industry?",
+    author: "Team GITTC",
+    date: "July 23, 2024",
+    imageUrl: "https://media.licdn.com/dms/image/D4D12AQFuzHBrZ9D0jw/article-cover_image-shrink_720_1280/0/1721679445384?e=1727913600&v=beta&t=mdwIgxyIwv-uRlzgJTy3yjmozO2aQU7NwejQVysFRrs",
+    blogContent: [
+        {
+            subtitle: "AI and Automation:",
+            paragraph : " - Artificial intelligence (AI) and automation are transforming recruitment. Chatbots screen candidates, algorithms match skills to job descriptions, and predictive analytics identify top talent. Embrace these tools to streamline processes and improve efficiency.",
+        },
+        {
+            subtitle: "Remote Hiring and Onboarding:",
+            paragraph : "- The pandemic accelerated remote work adoption. Companies now hire and onboard employees virtually. Video interviews, e-assessments, and digital paperwork are standard. Adapt your processes to accommodate remote talent.",
+        },
+        {
+            subtitle: "Diversity, Equity, and Inclusion (DEI):",
+            paragraph : " - Organizations prioritize DEI initiatives. They actively seek diverse talent, address biases, and create inclusive workplaces. As a recruitment agency, emphasize DEI in your candidate searches and educate clients on its importance.",
+        },
+        {
+            subtitle: "Skills Over Degrees:",
+            paragraph : " - Employers increasingly value skills and experience over formal degrees. Highlight candidates' practical abilities, certifications, and relevant projects. Upskilling and reskilling programs are gaining traction.",
+        },
+        {
+            subtitle: "Employer Branding:",
+            paragraph : " - Companies invest in employer branding to attract top talent. Showcase your clients' company culture, values, and employee experiences. A strong employer brand attracts candidates who align with the organization's mission.",
+        },
+        {
+            subtitle: "Data-Driven Decision-Making:",
+            paragraph : "- Data analytics guide recruitment strategies. Track metrics like time-to-hire, cost-per-hire, and quality of hire. Use insights to optimize processes and allocate resources effectively.",
+        },
+        {
+            subtitle: "Gig Economy and Freelancers:",
+            paragraph : " - The gig economy continues to grow. Companies hire freelancers, contractors, and project-based workers. Consider offering flexible staffing solutions to meet this demand.",
+        },
+        {
+            subtitle: " Soft Skills Assessment:",
+            paragraph : " - Beyond technical skills, employers focus on soft skills like adaptability, communication, and emotional intelligence. Assess candidates holistically to ensure cultural fit.",
+        },
+        {
+            paragraph : "As the recruitment landscape continues to evolve, staying informed about these trends is crucial for success. Embracing AI and automation, adapting to remote hiring, prioritizing DEI, and valuing skills over degrees are just a few ways to stay ahead. By leveraging data-driven decision-making and focusing on employer branding, organizations can attract and retain top talent. Remember, the key to thriving in this dynamic environment is continuous learning and flexibility.",
+        },
+    ]
+}
+const blogPost4 = {
+    title: "Charting a Course for Tomorrow: The UAE's Ministries of the Future",
+    author: "Team GITTC",
+    date: "June 26, 2024",
+    imageUrl: "https://media.licdn.com/dms/image/v2/D5612AQGvzOgEW3wh3A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1719389652739?e=1727913600&v=beta&t=2vmelt5SPYALOJ-Kx2NXMdmtOm_C4eLGIqvnBptpMQg",
+    blogContent: [
+        {
+            subtitle: "",
+            paragraph : "The United Arab Emirates (UAE) has long been synonymous with grandeur and innovation, but it is the nation's unique approach to governance that truly sets it apart on the world stage. The UAE is the sole country to have established a Ministry of Tolerance, a Ministry of Happiness, and a Ministry of Artificial Intelligence. Additionally, it has pioneered the concept of a virtual ministry with the Ministry of Possibilities. Each of these ministries is not just a functional department but a symbol of the UAE's commitment to a progressive and inclusive future. ",
+        },
+        {
+            subtitle: "",
+            paragraph : "The Ministry of Tolerance is a bold initiative that champions the values of coexistence and respect in a culturally diverse nation. It serves as a guiding force for policies that nurture a tolerant society, where every individual's rights are respected, and cultural diversity is celebrated.",
+        },
+        {
+            subtitle: "",
+            paragraph : "The Ministry of Happiness is an embodiment of the UAE's dedication to its citizens' and residents' overall well-being. It is tasked with integrating happiness into all aspects of government service, ensuring that the pursuit of happiness is a core value in public policy.",
+        },
+        {
+            subtitle: "",
+            paragraph : "The Ministry of Artificial Intelligence represents the UAE's strategic move to embrace and leverage the transformative power of AI. This ministry is a clear indicator of the nation's ambition to lead in the era of technological advancement and smart governance. ",
+        },
+        {
+            subtitle: "",
+            paragraph : "The Ministry of Possibilities operates beyond the confines of traditional bureaucracy. It is a virtual entity designed to tackle complex challenges with innovative solutions, thereby enhancing the quality of life for all. ",
+        },
+        {
+            subtitle: "",
+            paragraph : "These ministries collectively illustrate the UAE's visionary leadership and its proactive approach to shaping a future where technology, happiness, and tolerance are interwoven into the fabric of society. For professionals in the logistics and freight industry, the UAE's model offers inspiration on how to incorporate these values into business practices, ensuring adaptability, efficiency, and a commitment to excellence. ",
+        },
+        {
+            subtitle: "",
+            paragraph : "The UAE's governance structure, with its focus on positive societal values and embracing new technologies, provides a blueprint for modern businesses and governments aiming to create a thriving, future-ready environment. It is a testament to the belief that with visionary leadership and innovative thinking, the possibilities for growth and success are boundless.",
+        },
+        {
+            subtitle: "",
+            paragraph : "Join us in exploring how the principles of the UAE's governance can be applied to our industry for a brighter, more prosperous future.",
+        },
+    ]
+}
+const blogPost5 = {
+    title: "",
+    author: "Team GITTC",
+    date: "April 17, 2024",
+    imageUrl: "https://media.licdn.com/dms/image/D5612AQHldNerRp5Zwg/article-cover_image-shrink_720_1280/0/1713337916400?e=1727913600&v=beta&t=iCQMZJgMCc2Susx6mApE7lkI5xL5ZEImWQBYBYbJ37U",
+    blogContent: [
+        {
+            subtitle: "",
+            paragraph : "In an era where technology blurs the lines between work and personal life, the ‘Right to Disconnect’ bill emerges as a beacon of hope for employees seeking a healthier work-life balance. This groundbreaking legislation is not just a policy; it’s a cultural shift towards acknowledging the importance of rest and recuperation in our hyper-connected world.",
+        },
+        {
+            subtitle: "",
+            paragraph : "The bill’s core principle is simple yet profound: employees should have the right to switch off from work-related communications after business hours. This right is crucial in preventing burnout, a phenomenon all too common in today’s workforce. By setting clear boundaries, employees can fully engage in their personal lives without the looming pressure of work tasks.",
+        },
+        {
+            subtitle: "",
+            paragraph : "However, the bill is not without its challenges. Implementation requires careful consideration of various industries’ operational needs and the diverse preferences of the workforce. It’s a delicate balance between ensuring business continuity and respecting personal time.",
+        },
+        {
+            subtitle: "",
+            paragraph : "As companies navigate these waters, the success stories of those who have already adopted similar policies shine a light on the potential benefits. Increased productivity, higher job satisfaction, and improved mental health are just a few of the positive outcomes reported by organizations that respect the ‘Right to Disconnect.’",
+        },
+        {
+            subtitle: "",
+            paragraph : "In conclusion, the ‘Right to Disconnect’ bill is more than legislation; it’s a commitment to the well-being of employees. It’s a statement that personal time is valuable and that a well-rested employee is an asset to any organization.",
+        },
+        {
+            subtitle: "",
+            paragraph : "However, the policy alone is insufficient; it requires accompanying measures like awareness raising, training, and effective limits on out-of-hours connection.",
+        },
+        // {
+        //     subtitle: "",
+        //     paragraph : "",
+        // },
+        // {
+        //     subtitle: "",
+        //     paragraph : "",
+        // },
+        // {
+        //     subtitle: "",
+        //     paragraph : "",
+        // },
+        // {
+        //     subtitle: "",
+        //     paragraph : "",
+        // },
+    ]
+}
+
 const Blog = () => {
     const [open, setOpen] = useState(false);
     const [blogPostData, setBlogPostData] = useState(null);
@@ -141,6 +273,24 @@ const Blog = () => {
                         title="Navigating the AI Revolution: Where Humans and Algorithms Tango"
                         data={blogPost2}
                         imageUrl={"https://media.licdn.com/dms/image/D5612AQEMfvJqp_vbUw/article-cover_image-shrink_720_1280/0/1721779583852?e=1727913600&v=beta&t=V5KyIItNov0SYSkdlGJP9eqC2Ye4Zbiy-Pd9OiQYQTM"}
+                        handler={openHandler}
+                    />
+                    <BlogPostCard
+                        title={blogPost4.title}
+                        data={blogPost4}
+                        imageUrl={blogPost2.imageUrl}
+                        handler={openHandler}
+                    />
+                    <BlogPostCard
+                        title={blogPost3.title}
+                        data={blogPost3}
+                        imageUrl={blogPost3.imageUrl}
+                        handler={openHandler}
+                    />
+                    <BlogPostCard
+                        title={blogPost5.title}
+                        data={blogPost5}
+                        imageUrl={blogPost5.imageUrl}
                         handler={openHandler}
                     />
                 </div>

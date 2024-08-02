@@ -286,24 +286,28 @@ body {
 }
 
 .blog-bg{
-    background: #000e;
+    background-image: url('./assets/blog-hero-bg.jpeg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: initial;
     width: 100%;
-    opacity: 0.7;
     height: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .blog-bg::after{
-    content: "";
-    background-image: url('./assets/globe.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: -2;
+    content: '';
     position: absolute;
+    background-color: #000E;
+    background-repeat: no-repeat;
     left: 0;
     top: 0;
     bottom: 0;
     width: 100%;
+    height: auto;
+    opacity: 0.7;
+    z-index: -2;
 }
 
 .contact-hero-bg {
