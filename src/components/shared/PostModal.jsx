@@ -55,8 +55,10 @@ const PostModal = ({ open, setOpen, data }) => {
                         {data ?
                             <BlogPost
                                 title={data.title}
+                                description={data.description}
                                 content={data.blogContent}
                                 author={data.author}
+                                subItalicheading={data.subItalicheading}
                                 date={data.date}
                                 imageUrl={data.imageUrl}
                                 handler={handleClose}

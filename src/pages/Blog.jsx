@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import WrapperLayout from '../components/layout/WrapperLayout'
 import { Link } from 'react-router-dom';
-import BlogPost from '../components/shared/BlogPost';
 import Subscribe from '../components/common/Subscribe';
 import PostModal from '../components/shared/PostModal';
 import Button from '@mui/material/Button';
@@ -10,43 +9,43 @@ import Button from '@mui/material/Button';
 const blogPost1 = {
     blogContent: [
         {
-            subtitle: 'Confusing Application Processes',
+            subNumrictitle: 'Confusing Application Processes',
             paragraph: 'Navigating through complex and lengthy application forms can be frustrating. Many job seekers find themselves lost in a maze of requirements and steps. Simplifying your resume and keeping a checklist of required documents can help streamline the process.'
         },
         {
-            subtitle: 'Unclear Job Descriptions',
+            subNumrictitle: 'Unclear Job Descriptions',
             paragraph: 'Job descriptions that are vague or overly broad can leave candidates unsure if they are a good fit. It’s important to reach out to the hiring manager for clarification and tailor your application to highlight relevant skills and experiences.'
         },
         {
-            subtitle: "Long Drawn-Out Interview Processes",
+            subNumrictitle: "Long Drawn-Out Interview Processes",
             paragraph: "Extended interview processes can be exhausting and demotivating. To stay motivated, keep track of your progress, prepare thoroughly for each stage, and maintain open communication with the recruiter."
         },
         {
-            subtitle: "Unknown Salary Ranges",
+            subNumrictitle: "Unknown Salary Ranges",
             paragraph: "Not knowing the salary range for a position can make it difficult to gauge if the job meets your financial needs. Research industry standards and use platforms like Glassdoor to get an idea of what to expect."
         },
         {
-            subtitle: "Online Resume Filters",
+            subNumrictitle: "Online Resume Filters",
             paragraph: "Many companies use Applicant Tracking Systems (ATS) to filter resumes, which can be a barrier for job seekers. To increase your chances, use keywords from the job posting and keep your resume format simple and ATS-friendly."
         },
         {
-            subtitle: "The Hidden Job Market",
+            subNumrictitle: "The Hidden Job Market",
             paragraph: "A significant number of job opportunities are never advertised. Networking is key to accessing these hidden jobs. Attend industry events, join professional groups, and connect with people in your field."
         },
         {
-            subtitle: "Not Feeling 100% Qualified for a Job",
+            subNumrictitle: "Not Feeling 100% Qualified for a Job",
             paragraph: "It’s common to feel underqualified for a job, but don’t let that stop you from applying. Highlight your transferable skills and show your willingness to learn and grow in the role."
         },
         {
-            subtitle: "Resume Optimization",
+            subNumrictitle: "Resume Optimization",
             paragraph: "Creating a resume that stands out is crucial. Tailor your resume for each job application, use keywords, and focus on achievements rather than just job duties."
         },
         {
-            subtitle: "Interview Anxiety",
+            subNumrictitle: "Interview Anxiety",
             paragraph: "Interviews can be nerve-wracking. Prepare thoroughly, practice mindfulness techniques, and conduct mock interviews to build confidence."
         },
         {
-            subtitle: "Aligning Personal Values with Company Culture",
+            subNumrictitle: "Aligning Personal Values with Company Culture",
             paragraph: "Finding a job that aligns with your personal values and company culture is essential for long-term satisfaction. Research the company, ask the right questions during the interview, and trust your instincts."
         },
         {
@@ -56,6 +55,7 @@ const blogPost1 = {
         // Add more content sections as needed
     ],
     title: "The Struggles of Job Seekers: Finding the Perfect Fit",
+    description : "In today’s competitive job market, finding the perfect job can feel like searching for a needle in a haystack. Job seekers face numerous challenges that can make the process daunting and stressful. Let’s explore some of the common hurdles candidates encounter and how they can overcome them.",    
     author: "Team GITTC",
     date: "July 26, 2024",
     imageUrl: "https://media.licdn.com/dms/image/D5612AQHlkpwuZRMgNA/article-cover_image-shrink_720_1280/0/1721983249032?e=1727913600&v=beta&t=BQe3A__yj3iF5L-CIolxR_CfmMX3SRSnQ5V85ddNRGM",
@@ -69,31 +69,32 @@ const blogPost2 = {
         },
         {
             subtitle: "The Dance of Disruption and Creation",
-            paragraph: "The Historical Echo: Auto Industry vs. the Cycle : Remember when cars were noisy contraptions, belching smoke and ruffling feathers? Well, AI is our modern-day engine of transformation. It’s rewriting the choreography of industries—sometimes with grace, sometimes with a few missteps. But it’s here to stay, and we’re all part of the performance. AI—often met with skepticism—holds similar transformative potential.",
+            subItalicheading : "The Historical Echo: Auto Industry vs. the Cycle",
+            paragraph: "Remember when cars were noisy contraptions, belching smoke and ruffling feathers? Well, AI is our modern-day engine of transformation. It’s rewriting the choreography of industries—sometimes with grace, sometimes with a few missteps. But it’s here to stay, and we’re all part of the performance. AI—often met with skepticism—holds similar transformative potential.",
         },
         {
             subtitle: "The Yin and Yang of Employment",
-            paragraph: "Job Losses and the Spotlight on New Roles : Yes, there are casualties on the dance floor. Routine tasks—the cha-cha of spreadsheets, the two-step of data entry—are now AI’s domain. But let’s not forget the tango of opportunity. AI creates new roles: the salsa of chatbots, the foxtrot of predictive analytics. Consider chatbots handling customer inquiries or predictive analytics optimizing supply chains. And guess what? Humans still lead the dance. We’re the improvisers, the ones who spin innovation out of thin air.",
+            subItalicheading : "Job Losses and the Spotlight on New Roles",
+            paragraph: "Yes, there are casualties on the dance floor. Routine tasks—the cha-cha of spreadsheets, the two-step of data entry—are now AI’s domain. But let’s not forget the tango of opportunity. AI creates new roles: the salsa of chatbots, the foxtrot of predictive analytics. Consider chatbots handling customer inquiries or predictive analytics optimizing supply chains. And guess what? Humans still lead the dance. We’re the improvisers, the ones who spin innovation out of thin air.",
         },
         {
             subtitle: "The Human Advantage",
-            paragraph: "Our Secret Sauce: Adaptability : Here’s the thing about humans: we’re chameleons. We adapt. We thrive amidst change, learning and evolving. While AI crunches numbers, we weave narratives. As companies embrace AI, they must also nurture their human workforce. Sure, algorithms can predict your next shoe size, but can they tell you why you love those red sneakers? Nope. That’s our superpower—the ability to connect the dots, even when they’re in different constellations.",
+            subItalicheading : "Our Secret Sauce: Adaptability",
+            paragraph: "Here’s the thing about humans: we’re chameleons. We adapt. We thrive amidst change, learning and evolving. While AI crunches numbers, we weave narratives. As companies embrace AI, they must also nurture their human workforce. Sure, algorithms can predict your next shoe size, but can they tell you why you love those red sneakers? Nope. That’s our superpower—the ability to connect the dots, even when they’re in different constellations.",
         },
         {
             subtitle: "Leading by Example: Companies in Transition",
-            paragraph: "",
-        },
-        {
-            subtitle: "Amazon: From Warehouses to Algorithms",
+            subItalicheading : "1. Amazon: From Warehouses to Algorithms",
             paragraph: "Amazon’s metamorphosis from an online bookstore to a global e-commerce giant exemplifies adaptability. Their AI-driven recommendation engine—based on user behavior—fuels sales. Yet, Amazon invests in employee training, recognizing that humans remain the heartbeat of innovation. Pure AI magic. But Jeff Bezos knows the score. Humans still write the plot twists. They train, they adapt, and they keep the story alive.",
         },
         {
-            subtitle: "Tesla: Autonomy with a Human Chauffeur",
+            subItalicheading: "2. Tesla: Autonomy with a Human Chauffeur",
             paragraph: "Tesla’s self-driving cars epitomize AI’s potential. But Elon Musk emphasizes the “human in the loop.” Tesla’s Autopilot system relies on neural networks, but human drivers remain essential for safety. It’s a delicate balance—an orchestra where AI plays the notes, but humans conduct. Elon Musk insists on a backup dancer—the human in the loop. It’s like having a DJ mix the beats while the AI grooves. Together, they create harmony on the highway.",
         },
         {
             subtitle: "Our Ongoing Symphony",
-            paragraph: "Embracing Change: GITTC’s Dance Card : At Goose ITTC, we’re not wallflowers, we’re not bystanders. We’re jitterbugging with AI. Our supply chain algorithms do the jitterbug, but our logistics experts? they’re the swing dancers. We’re rewriting the steps, adapting to the rhythm of progress. So grab a partner—human or algorithm—and let’s tango toward success.",
+            subItalicheading : "Embracing Change: GITTC’s Dance Card",
+            paragraph: "At Goose ITTC, we’re not wallflowers, we’re not bystanders. We’re jitterbugging with AI. Our supply chain algorithms do the jitterbug, but our logistics experts? they’re the swing dancers. We’re rewriting the steps, adapting to the rhythm of progress. So grab a partner—human or algorithm—and let’s tango toward success.",
         },
     ],
     title: "Navigating the AI Revolution: Where Humans and Algorithms Tango",
@@ -109,35 +110,35 @@ const blogPost3 = {
     imageUrl: "https://media.licdn.com/dms/image/D4D12AQFuzHBrZ9D0jw/article-cover_image-shrink_720_1280/0/1721679445384?e=1727913600&v=beta&t=mdwIgxyIwv-uRlzgJTy3yjmozO2aQU7NwejQVysFRrs",
     blogContent: [
         {
-            subtitle: "AI and Automation:",
+            subItalicheading: "1. AI and Automation:",
             paragraph : " - Artificial intelligence (AI) and automation are transforming recruitment. Chatbots screen candidates, algorithms match skills to job descriptions, and predictive analytics identify top talent. Embrace these tools to streamline processes and improve efficiency.",
         },
         {
-            subtitle: "Remote Hiring and Onboarding:",
+            subItalicheading: "2. Remote Hiring and Onboarding:",
             paragraph : "- The pandemic accelerated remote work adoption. Companies now hire and onboard employees virtually. Video interviews, e-assessments, and digital paperwork are standard. Adapt your processes to accommodate remote talent.",
         },
         {
-            subtitle: "Diversity, Equity, and Inclusion (DEI):",
+            subItalicheading: "3. Diversity, Equity, and Inclusion (DEI):",
             paragraph : " - Organizations prioritize DEI initiatives. They actively seek diverse talent, address biases, and create inclusive workplaces. As a recruitment agency, emphasize DEI in your candidate searches and educate clients on its importance.",
         },
         {
-            subtitle: "Skills Over Degrees:",
+            subItalicheading: "4. Skills Over Degrees:",
             paragraph : " - Employers increasingly value skills and experience over formal degrees. Highlight candidates' practical abilities, certifications, and relevant projects. Upskilling and reskilling programs are gaining traction.",
         },
         {
-            subtitle: "Employer Branding:",
+            subItalicheading: "5. Employer Branding:",
             paragraph : " - Companies invest in employer branding to attract top talent. Showcase your clients' company culture, values, and employee experiences. A strong employer brand attracts candidates who align with the organization's mission.",
         },
         {
-            subtitle: "Data-Driven Decision-Making:",
+            subItalicheading: "6. Data-Driven Decision-Making:",
             paragraph : "- Data analytics guide recruitment strategies. Track metrics like time-to-hire, cost-per-hire, and quality of hire. Use insights to optimize processes and allocate resources effectively.",
         },
         {
-            subtitle: "Gig Economy and Freelancers:",
+            subItalicheading: "7. Gig Economy and Freelancers:",
             paragraph : " - The gig economy continues to grow. Companies hire freelancers, contractors, and project-based workers. Consider offering flexible staffing solutions to meet this demand.",
         },
         {
-            subtitle: " Soft Skills Assessment:",
+            subItalicheading: "8. Soft Skills Assessment:",
             paragraph : " - Beyond technical skills, employers focus on soft skills like adaptability, communication, and emotional intelligence. Assess candidates holistically to ensure cultural fit.",
         },
         {
@@ -145,6 +146,7 @@ const blogPost3 = {
         },
     ]
 }
+
 const blogPost4 = {
     title: "Charting a Course for Tomorrow: The UAE's Ministries of the Future",
     author: "Team GITTC",
@@ -153,7 +155,7 @@ const blogPost4 = {
     blogContent: [
         {
             subtitle: "",
-            paragraph : "The United Arab Emirates (UAE) has long been synonymous with grandeur and innovation, but it is the nation's unique approach to governance that truly sets it apart on the world stage. The UAE is the sole country to have established a Ministry of Tolerance, a Ministry of Happiness, and a Ministry of Artificial Intelligence. Additionally, it has pioneered the concept of a virtual ministry with the Ministry of Possibilities. Each of these ministries is not just a functional department but a symbol of the UAE's commitment to a progressive and inclusive future. ",
+            paragraph : `The United Arab Emirates (UAE) has long been synonymous with grandeur and innovation, but it is the nation's unique approach to governance that truly sets it apart on the world stage. The UAE is the sole country to have established a Ministry of Tolerance, a Ministry of Happiness, and a Ministry of Artificial Intelligence. Additionally, it has pioneered the concept of a virtual ministry with the Ministry of Possibilities. Each of these ministries is not just a functional department but a symbol of the UAE's commitment to a progressive and inclusive future.`,
         },
         {
             subtitle: "",
@@ -185,8 +187,9 @@ const blogPost4 = {
         },
     ]
 }
+
 const blogPost5 = {
-    title: "",
+    title: "Weighing in on California’s ‘Right to Disconnect’ Bill",
     author: "Team GITTC",
     date: "April 17, 2024",
     imageUrl: "https://media.licdn.com/dms/image/D5612AQHldNerRp5Zwg/article-cover_image-shrink_720_1280/0/1713337916400?e=1727913600&v=beta&t=iCQMZJgMCc2Susx6mApE7lkI5xL5ZEImWQBYBYbJ37U",
@@ -276,15 +279,15 @@ const Blog = () => {
                         handler={openHandler}
                     />
                     <BlogPostCard
-                        title={blogPost4.title}
-                        data={blogPost4}
-                        imageUrl={blogPost2.imageUrl}
-                        handler={openHandler}
-                    />
-                    <BlogPostCard
                         title={blogPost3.title}
                         data={blogPost3}
                         imageUrl={blogPost3.imageUrl}
+                        handler={openHandler}
+                    />
+                    <BlogPostCard
+                        title={blogPost4.title}
+                        data={blogPost4}
+                        imageUrl={blogPost2.imageUrl}
                         handler={openHandler}
                     />
                     <BlogPostCard

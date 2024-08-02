@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { FaArrowUp } from 'react-icons/fa6';
 
-const BlogPost = ({ title, author, date, imageUrl, content, handler,isDarkMode,setIsDarkMode }) => {
+const BlogPost = ({ title, author, date, imageUrl,description,content,handler,isDarkMode,setIsDarkMode }) => {
+
     return (
         <div>
             <div className={`w-full px-4 py-6 ${!isDarkMode ? "text-gray-900 bg-[#FFFFFF]" : "text-gray-100 bg-gray-900" } `}>
@@ -17,11 +18,23 @@ const BlogPost = ({ title, author, date, imageUrl, content, handler,isDarkMode,s
                         className="w-full h-72 object-cover rounded-lg mb-6"
                     />
                 )}
+                
+                {
+                    description && (
+                        <p className='lg:mb-8 mb-5 mt-3 py-1'>
+                            {description}
+                        </p>
+                    )
+                }
 
                 <article className={`prose prose-lg  ${isDarkMode ? "text-gray-200 prose-invert" : "text-gray-800"}`}>
                     {content.map((section, index) => (
+                        console.log(section.paragraph.get),
                         <div key={index} className="mb-6">
-                            <h2 className={`text-2xl font-semibold ${isDarkMode ? "text-gray-200" : "text-gray-800"} mb-2`}>{section.subtitle}</h2>
+                            {section.subtitle && <h2 className={`text-2xl font-semibold ${isDarkMode ? "text-gray-200" : "text-gray-800"} mb-2`}>{section.subtitle}</h2>}
+                            {section.subNumrictitle && <h2 className={`text-2xl font-semibold ${isDarkMode ? "text-gray-200" : "text-gray-800"} mb-2`}><span>{index+1}.</span> {section.subNumrictitle}</h2>}
+                            {section.subItalicheading && <h4 className={`text-base font-semibold italic ${isDarkMode ? "text-gray-200" : "text-gray-800"} mb-2`}>{section.subItalicheading}</h4>}
+                            {section.subheading && <h4 className={`text-xl font-semibold ${isDarkMode ? "text-gray-200" : "text-gray-800"} mb-2`}>{section.subheading}</h4>}
                             <p>{section.paragraph}</p>
                         </div>
                     ))}

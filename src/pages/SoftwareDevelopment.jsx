@@ -3,6 +3,7 @@ import HeroContainer from '../components/common/HeroContainer'
 import WrapperLayout from '../components/layout/WrapperLayout'
 import Subscribe from '../components/common/Subscribe'
 import { FaLongArrowAltRight } from "react-icons/fa";
+import SoftwareImg from '../assets/services/Software_Development1.jpg'
 
 const SoftwareDevelopment = () => {
     return (
@@ -44,7 +45,7 @@ const SoftwareDevelopment = () => {
                         </div>
                         <div className='mb-[20px]'>
                             <img 
-                                src="https://www.gooseittc.com/wp-content/uploads/2023/06/Software_Development1.jpg" 
+                                src={SoftwareImg} 
                                 alt="software" 
                                 width={930}
                                 height={590}

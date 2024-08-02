@@ -184,7 +184,7 @@ body {
 }
 
 .home-hero-bg {
-    background-image: url(https://www.gooseittc.com/wp-content/uploads/2023/06/1-1.jpg);
+    background-image: url('./assets/home-hero-bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -209,7 +209,7 @@ body {
 }
 
 .home-touch-bg {
-    background-image: url(https://www.gooseittc.com/wp-content/uploads/2023/02/getInTouch.jpg);
+    background-image: url('./assets/getInTouch.jpg');
     background-position: center;
     position: relative;
     background-repeat: no-repeat;
@@ -260,7 +260,7 @@ body {
     z-index: -1;
     left: 20%;
     top: 0;
-    background-image: url(https://www.gooseittc.com/wp-content/themes/conbix/assets/img/icon/envelop.png);
+    background-image: url('./assets/envelop.png');
     opacity: 0.07;
     background-repeat: no-repeat;
 }
@@ -278,7 +278,7 @@ body {
 } */
 
 .about-hero-bg {
-    background-image: url(https://www.gooseittc.com/wp-content/uploads/2023/06/107.jpg);
+    background-image: url('./assets/about-hero-bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -311,7 +311,7 @@ body {
 }
 
 .contact-hero-bg {
-    background-image: url(https://www.gooseittc.com/wp-content/uploads/2024/06/Image-1.jpg);
+    background-image: url('./assets/contact-hero-bg.jpg');
     background-position: top right;
     background-repeat: no-repeat;
     background-size: initial;
@@ -324,7 +324,7 @@ body {
 .contact-hero-bg::after {
     content: '';
     position: absolute;
-    background-image: url(https://www.gooseittc.com/wp-content/themes/conbix/assets/img/shape/page-banner-bg.png);
+    background-image: url('./assets/contact-banner-bg.png');
     background-repeat: no-repeat;
     left: 0;
     top: 0;
@@ -411,7 +411,7 @@ body {
 }
 
 .technology-cons-hero-bg {
-    background-image: url(https://www.gooseittc.com/wp-content/uploads/2023/06/tech-consulting-768x537-1.jpg);
+    background-image: url('./assets/tech-consulting.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -434,7 +434,7 @@ body {
 }
 
 .technology-training-hero-bg {
-    background-image: url(	https://www.gooseittc.com/wp-content/uploads/2023/06/tech-training-852x559-1.jpg);
+    background-image: url('./assets/tech-training.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
